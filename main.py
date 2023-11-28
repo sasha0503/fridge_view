@@ -8,6 +8,7 @@ from streaming_utils import TestFrameCapture
 FPS = 10
 frame_capture = TestFrameCapture()
 rack_detector = RackDetector(detection_interval=1)
+
 res_folder = 'data/rack_detection/'
 os.makedirs(res_folder, exist_ok=True)
 cv2.namedWindow('frame', cv2.WINDOW_NORMAL)
