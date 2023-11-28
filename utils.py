@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-def get_images(video_r: cv2.VideoCapture, video_l: cv2.VideoCapture, timestamp: float) -> np.ndarray:
+def get_stitched_images(video_r: cv2.VideoCapture, video_l: cv2.VideoCapture, timestamp: float) -> np.ndarray:
     """
     Take a given timestamp, extract a still frame at the given timestamp for each ultra-wide camera
     and stitch them together to form a single image.
