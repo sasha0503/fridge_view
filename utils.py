@@ -44,7 +44,7 @@ if __name__ == '__main__':
     while True:
         timestamp_sec = input('Enter timestamp in seconds: ')
         try:
-            image = get_images(video_r, video_l, float(timestamp_sec))
+            image = get_stitched_images(video_r, video_l, float(timestamp_sec))
 
             cv2.namedWindow('image', cv2.WINDOW_NORMAL)
             cv2.imshow('image', image)
