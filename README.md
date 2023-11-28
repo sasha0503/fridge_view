@@ -1,6 +1,7 @@
 # fridge_view
 
-### Utility for Processing Videos from Fridge Cameras
+### Capture an opened rack of a fridge. 
+#### The implementation is based on contours detection and can be run with a single CPU.
 
 ![Full Rack](assets/full_rack.jpg)
 
