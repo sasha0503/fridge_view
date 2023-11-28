@@ -38,11 +38,13 @@ def get_stitched_images(video_r: cv2.VideoCapture, video_l: cv2.VideoCapture, ti
 
 
 if __name__ == '__main__':
-    video_r = cv2.VideoCapture('data/20_right_720.mp4')
-    video_l = cv2.VideoCapture('data/20_left_720.mp4')
+    video_r = cv2.VideoCapture('data/videos/20_right_720.mp4')
+    video_l = cv2.VideoCapture('data/videos/20_left_720.mp4')
 
     while True:
         timestamp_sec = input('Enter timestamp in seconds: ')
+        if timestamp_sec == 'q':
+            break
         try:
             image = get_stitched_images(video_r, video_l, float(timestamp_sec))
 
